@@ -1,6 +1,196 @@
 <!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EcoExchange | תמחור והתאמה</title><style>
 :root{--ink:#19332b;--green:#16805d;--sand:#f3efe4;--card:#fffdf8;--line:#ddd8c9;--muted:#6b776f;--orange:#e98843}*{box-sizing:border-box}body{margin:0;background:linear-gradient(130deg,#edf5ed,var(--sand));font-family:Arial,sans-serif;color:var(--ink);min-height:100vh}.wrap{max-width:1020px;margin:auto;padding:40px 20px}header{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:25px}header small{color:var(--green);font-weight:bold}h1{font-size:clamp(2.3rem,6vw,4.3rem);margin:8px 0}.grid{display:grid;grid-template-columns:330px 1fr;gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 40px #4e5f4620}label{display:block;font-size:.82rem;color:var(--muted);margin:12px 0 6px}select,input{width:100%;padding:11px;border:1px solid var(--line);border-radius:9px;background:white;font:inherit}button{width:100%;padding:13px;border:0;border-radius:10px;background:var(--green);color:white;margin-top:17px;font-weight:bold;cursor:pointer}.price{font-size:clamp(2rem,6vw,3.5rem);font-weight:900;color:var(--green);direction:ltr;text-align:right}.confidence{color:var(--muted)}.matches{margin-top:22px}.listing{display:grid;grid-template-columns:1fr auto;gap:8px;padding:14px 0;border-top:1px solid var(--line)}.score{background:#e2f2e9;color:var(--green);padding:6px 9px;border-radius:99px;font-size:.78rem}.fee{margin-top:16px;padding:13px;background:#fff0e5;border-radius:12px;color:#8b4a20}.error{color:#a22}@media(max-width:720px){header{display:block}.grid{grid-template-columns:1fr}}
 </style></head><body><main class="wrap"><header><div><small>ECOEXCHANGE / MARKET DESK</small><h1>ציוד טוב מחפש בית חדש.</h1></div><p>תמחור חכם, התאמת קונים ועמלת נאמנות שקופה.</p></header><section class="grid"><form class="card" id="form"><h2>פרטי הציוד</h2><label>סוג ציוד</label><select id="type"><option value="excavator">מחפר</option><option value="compressor">מדחס</option><option value="generator">גנרטור</option><option value="forklift">מלגזה</option><option value="crane">מנוף</option></select><label>מצב</label><select id="condition"><option value="good">טוב</option><option value="excellent">מצוין</option><option value="refurbished">משופץ</option><option value="fair">סביר</option><option value="as-is">כמו שהוא</option></select><label>מחיר שוק ממוצע (₪)</label><input id="average" type="number" min="1" value="85000"><label>מדד ביקוש (0–100)</label><input id="demand" type="range" min="0" max="100" value="76"><label>מספר פריטים בהיצע</label><input id="supply" type="number" min="0" value="4"><button>חשב מחיר והתאמות</button></form><div class="card" id="result"></div></section></main><script>
-/*__LIB_BUNDLE__*/
+const __modules={"lib/suggestPrice.js":function(require,module,exports){
+function suggestPrice(equipmentType, condition, marketTrends) {
+  const validEquipmentTypes = ['excavator','compressor','generator','forklift','crane'];
+  const validConditions = ['as-is','fair','good','excellent','refurbished'];
+
+  if (!validEquipmentTypes.includes(equipmentType)) {
+    throw new Error('Invalid equipmentType');
+  }
+  if (!validConditions.includes(condition)) {
+    throw new Error('Invalid condition');
+  }
+  if (typeof marketTrends !== 'object' || marketTrends === null) {
+    throw new Error('marketTrends must be an object');
+  }
+  const { demandIndex, recentAvgPrice, supplyCount, seasonFactor } = marketTrends;
+  if (typeof demandIndex !== 'number' || isNaN(demandIndex) || !isFinite(demandIndex) || demandIndex < 0 || demandIndex > 100) {
+    throw new Error('Invalid demandIndex');
+  }
+  if (!Number.isFinite(recentAvgPrice) || recentAvgPrice <= 0) {
+    throw new Error('Invalid recentAvgPrice');
+  }
+  if (!Number.isInteger(supplyCount) || supplyCount < 0) {
+    throw new Error('Invalid supplyCount');
+  }
+  if (typeof seasonFactor !== 'number' || isNaN(seasonFactor) || !isFinite(seasonFactor) || seasonFactor < 0.5 || seasonFactor > 1.5) {
+    throw new Error('Invalid seasonFactor');
+  }
+
+  let basePrice = recentAvgPrice;
+  if (supplyCount === 0) {
+    basePrice = recentAvgPrice * 1.2;
+  }
+
+  if (demandIndex < 20) {
+    basePrice = basePrice * 0.85;
+  } else if (demandIndex > 80) {
+    basePrice = basePrice * 1.1;
+  }
+
+  let suggestedMinPrice = basePrice * 0.9;
+  let suggestedMaxPrice = basePrice * 1.1;
+
+  if (seasonFactor < 0.8) {
+    suggestedMinPrice = suggestedMinPrice * 0.9;
+    suggestedMaxPrice = suggestedMaxPrice * 0.9;
+  }
+
+  const conditionMultipliers = {
+    'as-is': 0.7,
+    'fair': 0.85,
+    'good': 1.0,
+    'excellent': 1.15,
+    'refurbished': 1.05
+  };
+  const conditionMultiplier = conditionMultipliers[condition];
+  suggestedMinPrice = suggestedMinPrice * conditionMultiplier;
+  suggestedMaxPrice = suggestedMaxPrice * conditionMultiplier;
+
+  let confidence;
+  if (demandIndex < 20 || demandIndex > 80) {
+    confidence = 0.7;
+  } else if (supplyCount === 0) {
+    confidence = 0.5;
+  } else {
+    confidence = 0.85;
+  }
+
+  const reasoning = `Based on ${equipmentType} in ${condition} condition with demand index ${demandIndex}, average price ${recentAvgPrice}, supply count ${supplyCount}, and season factor ${seasonFactor}.`;
+
+  return {
+    suggestedMinPrice: Math.round(suggestedMinPrice * 100) / 100,
+    suggestedMaxPrice: Math.round(suggestedMaxPrice * 100) / 100,
+    confidence,
+    reasoning
+  };
+}
+
+module.exports = { suggestPrice };
+
+},
+"lib/findBestMatches.js":function(require,module,exports){
+function findBestMatches(buyerQuery, listings) {
+  const conditionRank = {
+    'New': 5,
+    'Used-Like New': 4,
+    'Used-Good': 3,
+    'Used-Fair': 2,
+    'Used-Poor': 1
+  };
+
+  const defaults = {
+    category: '',
+    keywords: '',
+    maxPrice: Infinity,
+    minCondition: 'Used-Poor'
+  };
+
+  const query = { ...defaults, ...buyerQuery };
+  const minRank = conditionRank[query.minCondition] || 1;
+  const seenIds = new Set();
+  const matches = [];
+
+  for (const listing of listings) {
+    if (!listing || typeof listing !== 'object') continue;
+
+    const { listingId, category, title, description, price, condition, sellerRating } = listing;
+
+    if (!listingId || seenIds.has(listingId)) continue;
+    seenIds.add(listingId);
+
+    const lCondition = condition || 'Used-Poor';
+    const lRank = conditionRank[lCondition] || 1;
+    if (lRank < minRank) continue;
+
+    // Price: missing/undefined -> no constraint (Infinity). Present but invalid
+    // (non-number, NaN, or negative) -> skip listing per spec.
+    let lPrice;
+    if (price === undefined || price === null) {
+      lPrice = Infinity;
+    } else if (typeof price !== 'number' || isNaN(price) || price < 0) {
+      continue;
+    } else {
+      lPrice = price;
+    }
+    if (query.maxPrice !== Infinity && lPrice > query.maxPrice) continue;
+
+    let categoryWeight = (category === query.category) ? 0.3 : 0;
+
+    let keywordWeight = 0;
+    if (query.keywords && query.keywords.length > 0) {
+      const queryWords = query.keywords.toLowerCase().split(/\s+/).filter(w => w);
+      if (queryWords.length > 0) {
+        const listingText = ((title || '') + ' ' + (description || '')).toLowerCase();
+        const matchCount = queryWords.filter(w => listingText.includes(w)).length;
+        keywordWeight = 0.4 * (matchCount / queryWords.length);
+      }
+    }
+
+    let priceFit = 0;
+    if (query.maxPrice !== Infinity && query.maxPrice > 0 && lPrice !== Infinity) {
+      priceFit = 0.2 * (1 - lPrice / query.maxPrice);
+    }
+
+    let rating = typeof sellerRating === 'number' ? Math.max(0, Math.min(5, sellerRating)) : 0;
+    const ratingWeight = 0.1 * (rating / 5);
+
+    const total = categoryWeight + keywordWeight + priceFit + ratingWeight;
+    const relevanceScore = Math.min(1, total);
+
+    matches.push({ listingId, relevanceScore });
+  }
+
+  matches.sort((a, b) => b.relevanceScore - a.relevanceScore);
+  return { matches };
+}
+
+module.exports = { findBestMatches };
+},
+"lib/calculateEscrowFee.js":function(require,module,exports){
+function calculateEscrowFee(transactionAmount, sellerTrustScore, buyerTrustScore) {
+  if (!Number.isFinite(transactionAmount) || transactionAmount <= 0) {
+    throw new Error('transactionAmount must be a positive number');
+  }
+  if (sellerTrustScore === null || sellerTrustScore === undefined) sellerTrustScore = 0;
+  if (buyerTrustScore === null || buyerTrustScore === undefined) buyerTrustScore = 0;
+  if (!Number.isFinite(sellerTrustScore) || sellerTrustScore < 0 || sellerTrustScore > 100) {
+    throw new Error('sellerTrustScore must be in range [0,100]');
+  }
+  if (!Number.isFinite(buyerTrustScore) || buyerTrustScore < 0 || buyerTrustScore > 100) {
+    throw new Error('buyerTrustScore must be in range [0,100]');
+  }
+  let baseFee = transactionAmount * 0.03;
+  let discount = 0;
+  if (transactionAmount >= 100) {
+    let trustDiscount = Math.min(sellerTrustScore, buyerTrustScore) * 0.0002;
+    if (sellerTrustScore > 80 && buyerTrustScore > 80) {
+      trustDiscount += 0.005;
+    }
+    discount = baseFee * trustDiscount;
+  }
+  let finalFee = Math.max(baseFee - discount, transactionAmount * 0.005);
+  if (transactionAmount > 1000000) {
+    finalFee = Math.min(finalFee, transactionAmount * 0.05 + 5000);
+  }
+  let feePercentage = (finalFee / transactionAmount) * 100;
+  return { baseFee, discount, finalFee, feePercentage };
+}
+
+module.exports = { calculateEscrowFee };
+
+}};const __cache={};function __require(id,from){if(id.startsWith('.')){id=(from.slice(0,from.lastIndexOf('/')+1)+id).split('/').reduce((a,p)=>p==='..'?(a.pop(),a):p==='.'?a:(a.push(p),a),[]).join('/')}if(!id.endsWith('.js'))id+='.js';if(__cache[id])return __cache[id].exports;const fn=__modules[id];if(!fn)throw new Error('Module not bundled: '+id);const module={exports:{}};__cache[id]=module;const localRequire=req=>__require(req,id);localRequire.main=null;fn(localRequire,module,module.exports);return module.exports}
 const Eco={...__require('lib/suggestPrice.js'),...__require('lib/findBestMatches.js'),...__require('lib/calculateEscrowFee.js')};const listings=[{listingId:'EX-104',category:'heavy',title:'Excavator low hours',description:'maintained hydraulic machine',price:79000,condition:'Used-Good',sellerRating:4.9},{listingId:'EX-221',category:'heavy',title:'Refurbished excavator',description:'recent service and warranty',price:83000,condition:'Used-Like New',sellerRating:4.7},{listingId:'EX-087',category:'power',title:'Industrial generator',description:'quiet diesel unit',price:41000,condition:'Used-Good',sellerRating:4.5}];const $=x=>document.getElementById(x),money=n=>new Intl.NumberFormat('he-IL',{style:'currency',currency:'ILS',maximumFractionDigits:0}).format(n),esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));function run(e){if(e)e.preventDefault();try{const avg=Number($('average').value),price=Eco.suggestPrice($('type').value,$('condition').value,{demandIndex:Number($('demand').value),recentAvgPrice:avg,supplyCount:Number($('supply').value),seasonFactor:1}),matched=Eco.findBestMatches({category:'heavy',keywords:$('type').value,maxPrice:price.suggestedMaxPrice,minCondition:'Used-Fair'},listings),fee=Eco.calculateEscrowFee((price.suggestedMinPrice+price.suggestedMaxPrice)/2,88,91);$('result').innerHTML=`<div class="confidence">טווח מומלץ · ביטחון ${Math.round(price.confidence*100)}%</div><div class="price">${money(price.suggestedMinPrice)} – ${money(price.suggestedMaxPrice)}</div><div class="fee">עמלת נאמנות משוערת: <b>${money(fee.finalFee)}</b> (${fee.feePercentage.toFixed(2)}%)</div><section class="matches"><h2>התאמות לקונים בשוק</h2>${matched.matches.length?matched.matches.map(m=>{const l=listings.find(x=>x.listingId===m.listingId);return `<div class="listing"><div><b>${esc(l.title)}</b><div class="confidence">${money(l.price)} · דירוג מוכר ${l.sellerRating}</div></div><span class="score">${Math.round(m.relevanceScore*100)}% התאמה</span></div>`}).join(''):'<p>לא נמצאו התאמות בטווח המחיר.</p>'}</section>`}catch(err){$('result').innerHTML=`<p class="error">${esc(err.message)}</p>`}}$('form').addEventListener('submit',run);run();
 </script></body></html>
