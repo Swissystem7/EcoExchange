@@ -1,0 +1,359 @@
+{
+  "communities": {
+    "0": [
+      "lib_findbestmatches",
+      "lib_findbestmatches_findbestmatches",
+      "lib_findbestmatches_test",
+      "lib_findbestmatches_test_assert",
+      "lib_findbestmatches_test_findbestmatches",
+      "lib_findbestmatches_test_result1",
+      "lib_findbestmatches_test_result10",
+      "lib_findbestmatches_test_result11",
+      "lib_findbestmatches_test_result12",
+      "lib_findbestmatches_test_result13",
+      "lib_findbestmatches_test_result14",
+      "lib_findbestmatches_test_result15",
+      "lib_findbestmatches_test_result16",
+      "lib_findbestmatches_test_result17",
+      "lib_findbestmatches_test_result18",
+      "lib_findbestmatches_test_result19",
+      "lib_findbestmatches_test_result2",
+      "lib_findbestmatches_test_result20",
+      "lib_findbestmatches_test_result21",
+      "lib_findbestmatches_test_result3",
+      "lib_findbestmatches_test_result4",
+      "lib_findbestmatches_test_result5",
+      "lib_findbestmatches_test_result6",
+      "lib_findbestmatches_test_result7",
+      "lib_findbestmatches_test_result8",
+      "lib_findbestmatches_test_result9"
+    ],
+    "1": [
+      "dot_github_workflows_factory_ci_document",
+      "index_html_calculateescrowfee",
+      "index_html_findbestmatches",
+      "index_html_listings",
+      "index_html_run",
+      "index_html_suggestprice",
+      "lib_commission",
+      "lib_commission_commission",
+      "lib_commission_test",
+      "lib_commission_test_assert",
+      "lib_commission_test_commission",
+      "lib_listingscore",
+      "lib_listingscore_listingscore",
+      "lib_listingscore_test",
+      "lib_listingscore_test_assert",
+      "lib_listingscore_test_listingscore",
+      "lib_readme_document"
+    ],
+    "2": [
+      "lib_computelistingtrustscore",
+      "lib_computelistingtrustscore_computelistingtrustscore",
+      "lib_computelistingtrustscore_test",
+      "lib_computelistingtrustscore_test_assert",
+      "lib_computelistingtrustscore_test_computelistingtrustscore",
+      "lib_computelistingtrustscore_test_conditions",
+      "lib_computelistingtrustscore_test_expectedscores",
+      "lib_computelistingtrustscore_test_result1",
+      "lib_computelistingtrustscore_test_result16",
+      "lib_computelistingtrustscore_test_result17",
+      "lib_computelistingtrustscore_test_result2",
+      "lib_computelistingtrustscore_test_result3",
+      "lib_computelistingtrustscore_test_result4",
+      "lib_computelistingtrustscore_test_result5"
+    ],
+    "3": [
+      "lib_matchbuyerrequests",
+      "lib_matchbuyerrequests_getactivebuyerrequests",
+      "lib_matchbuyerrequests_getlistingbyid",
+      "lib_matchbuyerrequests_getpreviousmatchesforlisting",
+      "lib_matchbuyerrequests_iswithinradius",
+      "lib_matchbuyerrequests_matchbuyerrequests"
+    ],
+    "4": [
+      "lib_boostlisting",
+      "lib_boostlisting_boostlisting",
+      "lib_boostlisting_getcategorydemandpercentile",
+      "lib_boostlisting_getlistingbyid",
+      "lib_boostlisting_getviewslast7days"
+    ],
+    "5": [
+      "lib_bulktotal",
+      "lib_bulktotal_bulktotal",
+      "lib_bulktotal_test",
+      "lib_bulktotal_test_assert",
+      "lib_bulktotal_test_bulktotal"
+    ],
+    "6": [
+      "lib_canreleaseescrow",
+      "lib_canreleaseescrow_canreleaseescrow",
+      "lib_canreleaseescrow_test",
+      "lib_canreleaseescrow_test_assert",
+      "lib_canreleaseescrow_test_canreleaseescrow"
+    ],
+    "7": [
+      "lib_manageescrowtransaction",
+      "lib_manageescrowtransaction_crypto",
+      "lib_manageescrowtransaction_db",
+      "lib_manageescrowtransaction_manageescrowtransaction"
+    ],
+    "8": [
+      "lib_matchbestsellers",
+      "lib_matchbestsellers_getallsellers",
+      "lib_matchbestsellers_getdistance",
+      "lib_matchbestsellers_matchbestsellers"
+    ],
+    "9": [
+      "lib_slugify",
+      "lib_slugify_test",
+      "lib_slugify_test_a",
+      "lib_slugify_test_slugify"
+    ],
+    "10": [
+      "lib_bundlesuggestions",
+      "lib_bundlesuggestions_bundlesuggestions",
+      "lib_bundlesuggestions_randomuuid"
+    ],
+    "11": [
+      "lib_executeescrowaction",
+      "lib_executeescrowaction_crypto",
+      "lib_executeescrowaction_executeescrowaction"
+    ],
+    "12": [
+      "lib_verifylistingsignature",
+      "lib_verifylistingsignature_crypto",
+      "lib_verifylistingsignature_verifylistingsignature"
+    ],
+    "13": [
+      "dot_github_workflows_validate_document",
+      "index_html_app"
+    ],
+    "14": [
+      "lib_autocreateescrowdeal",
+      "lib_autocreateescrowdeal_autocreateescrowdeal"
+    ],
+    "15": [
+      "lib_calculatedynamiccommissionrate",
+      "lib_calculatedynamiccommissionrate_calculatedynamiccommissionrate"
+    ],
+    "16": [
+      "lib_calculateescrowfee",
+      "lib_calculateescrowfee_calculateescrowfee"
+    ],
+    "17": [
+      "lib_calculatetrustscore",
+      "lib_calculatetrustscore_calculatetrustscore"
+    ],
+    "18": [
+      "lib_computeescrowfee",
+      "lib_computeescrowfee_computeescrowfee"
+    ],
+    "19": [
+      "lib_computeperformancefee",
+      "lib_computeperformancefee_computeperformancefee"
+    ],
+    "20": [
+      "lib_computeusertrustscore",
+      "lib_computeusertrustscore_computeusertrustscore"
+    ],
+    "21": [
+      "lib_findpotentialbuyers",
+      "lib_findpotentialbuyers_findpotentialbuyers"
+    ],
+    "22": [
+      "lib_matchbuyerintent",
+      "lib_matchbuyerintent_matchbuyerintent"
+    ],
+    "23": [
+      "lib_suggestprice",
+      "lib_suggestprice_suggestprice"
+    ],
+    "24": [
+      "lib_validatebulklistings",
+      "lib_validatebulklistings_validatebulklistings"
+    ],
+    "25": [
+      "lib_validatequicklisting",
+      "lib_validatequicklisting_validatequicklisting"
+    ],
+    "26": [
+      "lib_verifyimageuniqueness",
+      "lib_verifyimageuniqueness_verifyimageuniqueness"
+    ],
+    "27": [
+      "lib_verifylistingdata",
+      "lib_verifylistingdata_verifylistingdata"
+    ],
+    "28": [
+      "readme_document"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08,
+    "1": 0.15441176470588236,
+    "2": 0.15384615384615385,
+    "3": 0.6,
+    "4": 0.7,
+    "5": 0.5,
+    "6": 0.5,
+    "7": 0.5,
+    "8": 0.8333333333333334,
+    "9": 0.5,
+    "10": 0.6666666666666666,
+    "11": 0.6666666666666666,
+    "12": 0.6666666666666666,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0
+  },
+  "gods": [
+    {
+      "id": "lib_matchbuyerrequests_matchbuyerrequests",
+      "label": "matchBuyerRequests()",
+      "degree": 5
+    },
+    {
+      "id": "dot_github_workflows_factory_ci_document",
+      "label": "factory-ci workflow",
+      "degree": 5
+    },
+    {
+      "id": "lib_boostlisting_boostlisting",
+      "label": "boostListing()",
+      "degree": 4
+    },
+    {
+      "id": "lib_commission_commission",
+      "label": "commission()",
+      "degree": 4
+    },
+    {
+      "id": "lib_listingscore_listingscore",
+      "label": "listingScore()",
+      "degree": 4
+    },
+    {
+      "id": "index_html_run",
+      "label": "run",
+      "degree": 4
+    },
+    {
+      "id": "lib_matchbestsellers_matchbestsellers",
+      "label": "matchBestSellers()",
+      "degree": 3
+    },
+    {
+      "id": "lib_boostlisting_getlistingbyid",
+      "label": "getListingById()",
+      "degree": 2
+    },
+    {
+      "id": "lib_boostlisting_getviewslast7days",
+      "label": "getViewsLast7Days()",
+      "degree": 2
+    },
+    {
+      "id": "lib_boostlisting_getcategorydemandpercentile",
+      "label": "getCategoryDemandPercentile()",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "factory-ci workflow",
+      "target": "commission()",
+      "source_files": [
+        ".github/workflows/factory-ci.yml",
+        "lib/commission.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
+    },
+    {
+      "source": "factory-ci workflow",
+      "target": "listingScore()",
+      "source_files": [
+        ".github/workflows/factory-ci.yml",
+        "lib/listingScore.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
+    },
+    {
+      "source": "factory-ci workflow",
+      "target": "suggestPrice",
+      "source_files": [
+        ".github/workflows/factory-ci.yml",
+        "index.html"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `suggestPrice` unexpectedly reaches hub `factory-ci workflow`"
+    },
+    {
+      "source": "factory-ci workflow",
+      "target": "findBestMatches",
+      "source_files": [
+        ".github/workflows/factory-ci.yml",
+        "index.html"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `findBestMatches` unexpectedly reaches hub `factory-ci workflow`"
+    },
+    {
+      "source": "factory-ci workflow",
+      "target": "calculateEscrowFee",
+      "source_files": [
+        ".github/workflows/factory-ci.yml",
+        "index.html"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `calculateEscrowFee` unexpectedly reaches hub `factory-ci workflow`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "verify_inferred",
+      "question": "Are the 5 inferred relationships involving `factory-ci workflow` (e.g. with `calculateEscrowFee` and `findBestMatches`) actually correct?",
+      "why": "`factory-ci workflow` has 5 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `commission()` (e.g. with `factory-ci workflow` and `commission.js`) actually correct?",
+      "why": "`commission()` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `listingScore()` (e.g. with `factory-ci workflow` and `listingScore.js`) actually correct?",
+      "why": "`listingScore()` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `assert`, `{ bulkTotal }`, `{ randomUUID }` to the rest of the system?",
+      "why": "53 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `findBestMatches.test.js` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

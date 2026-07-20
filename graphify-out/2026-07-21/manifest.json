@@ -1,0 +1,202 @@
+{
+  "lib/autoCreateEscrowDeal.js": {
+    "mtime": 1784573169.6959116,
+    "ast_hash": "89ba1d57a9574c4a611a4adf7d8d8c3a",
+    "semantic_hash": "89ba1d57a9574c4a611a4adf7d8d8c3a"
+  },
+  "lib/boostListing.js": {
+    "mtime": 1784573169.1338623,
+    "ast_hash": "866d16933c8adce0a14ac744a9871d31",
+    "semantic_hash": "866d16933c8adce0a14ac744a9871d31"
+  },
+  "lib/bulkTotal.js": {
+    "mtime": 1784219531.5330307,
+    "ast_hash": "19e209c256fed44b5743d93eb0c268be",
+    "semantic_hash": "19e209c256fed44b5743d93eb0c268be"
+  },
+  "lib/bulkTotal.test.js": {
+    "mtime": 1784219531.5330307,
+    "ast_hash": "8d79f208ce9794351616d90f6fbcca1f",
+    "semantic_hash": "8d79f208ce9794351616d90f6fbcca1f"
+  },
+  "lib/bundleSuggestions.js": {
+    "mtime": 1784414766.5138829,
+    "ast_hash": "c40a90baa74bfe112c7dc498441160f5",
+    "semantic_hash": "c40a90baa74bfe112c7dc498441160f5"
+  },
+  "lib/calculateDynamicCommissionRate.js": {
+    "mtime": 1784573220.0954356,
+    "ast_hash": "b9829aea374dc48b19f626f5a3311cdf",
+    "semantic_hash": "b9829aea374dc48b19f626f5a3311cdf"
+  },
+  "lib/calculateEscrowFee.js": {
+    "mtime": 1784414765.989498,
+    "ast_hash": "beea62890f7eec26736310349c2347fb",
+    "semantic_hash": "beea62890f7eec26736310349c2347fb"
+  },
+  "lib/calculateTrustScore.js": {
+    "mtime": 1784457973.910906,
+    "ast_hash": "15849b639fff6e0ed84b63e2f00b1be2",
+    "semantic_hash": "15849b639fff6e0ed84b63e2f00b1be2"
+  },
+  "lib/canReleaseEscrow.js": {
+    "mtime": 1784282326.9789445,
+    "ast_hash": "4dd4859da2ef422467c48ed63743bbe3",
+    "semantic_hash": "4dd4859da2ef422467c48ed63743bbe3"
+  },
+  "lib/canReleaseEscrow.test.js": {
+    "mtime": 1784282327.507455,
+    "ast_hash": "205a8f8b00be011b4d24ac8e48000efe",
+    "semantic_hash": "205a8f8b00be011b4d24ac8e48000efe"
+  },
+  "lib/commission.js": {
+    "mtime": 1784217856.479437,
+    "ast_hash": "8b03c0e21ab4d7076ef91e1e7b87fff2",
+    "semantic_hash": "8b03c0e21ab4d7076ef91e1e7b87fff2"
+  },
+  "lib/commission.test.js": {
+    "mtime": 1784217856.4950604,
+    "ast_hash": "a949fc732c1042f8ea58a1728b8c1383",
+    "semantic_hash": "a949fc732c1042f8ea58a1728b8c1383"
+  },
+  "lib/computeEscrowFee.js": {
+    "mtime": 1784573221.820029,
+    "ast_hash": "f73dae500ab586471093449f771cab20",
+    "semantic_hash": "f73dae500ab586471093449f771cab20"
+  },
+  "lib/computeListingTrustScore.js": {
+    "mtime": 1784282317.459774,
+    "ast_hash": "a717cbd096fa189f5a88c64d1559ffaf",
+    "semantic_hash": "a717cbd096fa189f5a88c64d1559ffaf"
+  },
+  "lib/computeListingTrustScore.test.js": {
+    "mtime": 1784282317.9749806,
+    "ast_hash": "ebd7953766eae37a140534d4d768b432",
+    "semantic_hash": "ebd7953766eae37a140534d4d768b432"
+  },
+  "lib/computePerformanceFee.js": {
+    "mtime": 1784573220.7359877,
+    "ast_hash": "a16ad6474421e1c27c28966feac7d29e",
+    "semantic_hash": "a16ad6474421e1c27c28966feac7d29e"
+  },
+  "lib/computeUserTrustScore.js": {
+    "mtime": 1784573188.4821987,
+    "ast_hash": "98cd44c157e3f1240f056f0eb15f641f",
+    "semantic_hash": "98cd44c157e3f1240f056f0eb15f641f"
+  },
+  "lib/executeEscrowAction.js": {
+    "mtime": 1784573187.8568566,
+    "ast_hash": "c88f93a9350b9bdde9fdc56eaa8b7f3a",
+    "semantic_hash": "c88f93a9350b9bdde9fdc56eaa8b7f3a"
+  },
+  "lib/findBestMatches.js": {
+    "mtime": 1784282342.6265407,
+    "ast_hash": "9b39c536f335bdc4021779bbd65fef3d",
+    "semantic_hash": "9b39c536f335bdc4021779bbd65fef3d"
+  },
+  "lib/findBestMatches.test.js": {
+    "mtime": 1784282343.1165962,
+    "ast_hash": "71d0b9783062c3592819df9f50ea6f09",
+    "semantic_hash": "71d0b9783062c3592819df9f50ea6f09"
+  },
+  "lib/findPotentialBuyers.js": {
+    "mtime": 1784443573.2061687,
+    "ast_hash": "0b53ee918c54ad28ffef5e8cfeb4cba2",
+    "semantic_hash": "0b53ee918c54ad28ffef5e8cfeb4cba2"
+  },
+  "lib/listingScore.js": {
+    "mtime": 1784217856.4950604,
+    "ast_hash": "c946a1e281283bc5e07b944697f40afa",
+    "semantic_hash": "c946a1e281283bc5e07b944697f40afa"
+  },
+  "lib/listingScore.test.js": {
+    "mtime": 1784217856.4950604,
+    "ast_hash": "88ad6d9fc7551fb2ac603e9bc13c3c26",
+    "semantic_hash": "88ad6d9fc7551fb2ac603e9bc13c3c26"
+  },
+  "lib/manageEscrowTransaction.js": {
+    "mtime": 1784407828.5964675,
+    "ast_hash": "1b977a2169d1f40571b02cba1cff371a",
+    "semantic_hash": "1b977a2169d1f40571b02cba1cff371a"
+  },
+  "lib/matchBestSellers.js": {
+    "mtime": 1784407829.154544,
+    "ast_hash": "18d6b59fe215c569cd2e26c3bddfa950",
+    "semantic_hash": "18d6b59fe215c569cd2e26c3bddfa950"
+  },
+  "lib/matchBuyerIntent.js": {
+    "mtime": 1784573227.314215,
+    "ast_hash": "59d1a7cf5d95bc3d3cd390773c0925ac",
+    "semantic_hash": "59d1a7cf5d95bc3d3cd390773c0925ac"
+  },
+  "lib/matchBuyerRequests.js": {
+    "mtime": 1784573206.1119113,
+    "ast_hash": "7b93f037354600de6359bb8e606922b5",
+    "semantic_hash": "7b93f037354600de6359bb8e606922b5"
+  },
+  "lib/slugify.js": {
+    "mtime": 1784241698.531002,
+    "ast_hash": "ceff1bf445c6fe022ea9a0eeffad9bd7",
+    "semantic_hash": "ceff1bf445c6fe022ea9a0eeffad9bd7"
+  },
+  "lib/slugify.test.js": {
+    "mtime": 1784241698.531002,
+    "ast_hash": "7285776806cdf829491916a66fe83311",
+    "semantic_hash": "7285776806cdf829491916a66fe83311"
+  },
+  "lib/suggestPrice.js": {
+    "mtime": 1784414765.4370105,
+    "ast_hash": "c4418cb80c9ca88dd70d58c0ab9135bf",
+    "semantic_hash": "c4418cb80c9ca88dd70d58c0ab9135bf"
+  },
+  "lib/validateBulkListings.js": {
+    "mtime": 1784573205.4962697,
+    "ast_hash": "f142ab111a07d182450fee93c41c6315",
+    "semantic_hash": "f142ab111a07d182450fee93c41c6315"
+  },
+  "lib/validateQuickListing.js": {
+    "mtime": 1784443572.4595146,
+    "ast_hash": "3f0ad63b841d501b90c4c7c53bec7165",
+    "semantic_hash": "3f0ad63b841d501b90c4c7c53bec7165"
+  },
+  "lib/verifyImageUniqueness.js": {
+    "mtime": 1784457972.9481823,
+    "ast_hash": "84960672ea7cb64486c1e350dd3d3076",
+    "semantic_hash": "84960672ea7cb64486c1e350dd3d3076"
+  },
+  "lib/verifyListingData.js": {
+    "mtime": 1784407828.0310574,
+    "ast_hash": "4aff3066f4d4c18fa2755bf4d513c46b",
+    "semantic_hash": "4aff3066f4d4c18fa2755bf4d513c46b"
+  },
+  "lib/verifyListingSignature.js": {
+    "mtime": 1784573187.2614188,
+    "ast_hash": "33c6213de114a248c4898321b0a87ca7",
+    "semantic_hash": "33c6213de114a248c4898321b0a87ca7"
+  },
+  ".github/workflows/factory-ci.yml": {
+    "mtime": 1784400881.417728,
+    "ast_hash": "647973c28026a520b63b016894b8d97c",
+    "semantic_hash": "647973c28026a520b63b016894b8d97c"
+  },
+  ".github/workflows/validate.yml": {
+    "mtime": 1784200868.5953171,
+    "ast_hash": "9da0300cccee1a345810e1b85468cee0",
+    "semantic_hash": "9da0300cccee1a345810e1b85468cee0"
+  },
+  "README.md": {
+    "mtime": 1784200868.5953171,
+    "ast_hash": "f611640356a74bebfbe4c2ac6190770a",
+    "semantic_hash": "f611640356a74bebfbe4c2ac6190770a"
+  },
+  "index.html": {
+    "mtime": 1784569748.2857494,
+    "ast_hash": "ceb88f35c5b3cd3bc3279a0b8fcf2cff",
+    "semantic_hash": "ceb88f35c5b3cd3bc3279a0b8fcf2cff"
+  },
+  "lib/README.md": {
+    "mtime": 1784217856.4950604,
+    "ast_hash": "dc47312db461601dc34258f7b31925cd",
+    "semantic_hash": "dc47312db461601dc34258f7b31925cd"
+  }
+}
