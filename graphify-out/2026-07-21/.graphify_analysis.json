@@ -282,7 +282,7 @@
       ],
       "confidence": "INFERRED",
       "relation": "references",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code \u2194 doc); connects across different repos/directories"
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
     },
     {
       "source": "factory-ci workflow",
@@ -293,7 +293,7 @@
       ],
       "confidence": "INFERRED",
       "relation": "references",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code \u2194 doc); connects across different repos/directories"
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code ↔ doc); connects across different repos/directories"
     },
     {
       "source": "factory-ci workflow",
@@ -329,8 +329,31 @@
       "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `calculateEscrowFee` unexpectedly reaches hub `factory-ci workflow`"
     }
   ],
-  "tokens": {
-    "input": 5291,
-    "output": 8404
-  }
+  "questions": [
+    {
+      "type": "verify_inferred",
+      "question": "Are the 5 inferred relationships involving `factory-ci workflow` (e.g. with `calculateEscrowFee` and `findBestMatches`) actually correct?",
+      "why": "`factory-ci workflow` has 5 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `commission()` (e.g. with `factory-ci workflow` and `commission.js`) actually correct?",
+      "why": "`commission()` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `listingScore()` (e.g. with `factory-ci workflow` and `listingScore.js`) actually correct?",
+      "why": "`listingScore()` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `assert`, `{ bulkTotal }`, `{ randomUUID }` to the rest of the system?",
+      "why": "53 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `findBestMatches.test.js` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08 - nodes in this community are weakly interconnected."
+    }
+  ]
 }

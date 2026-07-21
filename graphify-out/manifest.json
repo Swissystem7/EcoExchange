@@ -198,5 +198,15 @@
     "mtime": 1784217856.4950604,
     "ast_hash": "dc47312db461601dc34258f7b31925cd",
     "semantic_hash": "dc47312db461601dc34258f7b31925cd"
+  },
+  "lib/initEscrowContract.js": {
+    "mtime": 1784587564.4072826,
+    "ast_hash": "2460585327a4bfa32f320c12610662f0",
+    "semantic_hash": ""
+  },
+  "VALIDATION.md": {
+    "mtime": 1784581451.2186348,
+    "ast_hash": "884194f02514a871603e3c7e84c43ae3",
+    "semantic_hash": ""
   }
 }

@@ -1,15 +1,16 @@
-# Graph Report - .  (2026-07-21)
+# Graph Report - EcoExchange  (2026-07-21)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 39 files · ~9,878 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 130 nodes · 119 edges · 29 communities (22 shown, 7 thin omitted)
-- Extraction: 73% EXTRACTED · 27% INFERRED · 0% AMBIGUOUS · INFERRED: 32 edges (avg confidence: 0.53)
+- 140 nodes · 127 edges · 31 communities (24 shown, 7 thin omitted)
+- Extraction: 74% EXTRACTED · 26% INFERRED · 0% AMBIGUOUS · INFERRED: 33 edges (avg confidence: 0.53)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `31fd9a53`
+- Built from commit: `1edaf493`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -29,18 +30,19 @@
 - verifyListingSignature.js
 - validate workflow
 - EcoExchange README
+- EcoExchange — דף אימות שוק (מקסימום 350 מילים)
 
 ## God Nodes (most connected - your core abstractions)
-1. `matchBuyerRequests()` - 5 edges
-2. `factory-ci workflow` - 5 edges
-3. `boostListing()` - 4 edges
-4. `commission()` - 4 edges
-5. `listingScore()` - 4 edges
-6. `run` - 4 edges
-7. `matchBestSellers()` - 3 edges
-8. `getListingById()` - 2 edges
-9. `getViewsLast7Days()` - 2 edges
-10. `getCategoryDemandPercentile()` - 2 edges
+1. `EcoExchange — דף אימות שוק (מקסימום 350 מילים)` - 6 edges
+2. `matchBuyerRequests()` - 5 edges
+3. `factory-ci workflow` - 5 edges
+4. `boostListing()` - 4 edges
+5. `commission()` - 4 edges
+6. `listingScore()` - 4 edges
+7. `run` - 4 edges
+8. `matchBestSellers()` - 3 edges
+9. `getListingById()` - 2 edges
+10. `getViewsLast7Days()` - 2 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `factory-ci workflow` --references--> `commission()`  [INFERRED]
@@ -60,7 +62,7 @@
 ## Hyperedges (group relationships)
 - **Core Pricing Algorithms** — index_html_suggestprice, index_html_findbestmatches, index_html_calculateescrowfee [EXTRACTED 1.00]
 
-## Communities (29 total, 7 thin omitted)
+## Communities (31 total, 7 thin omitted)
 
 ### Community 0 - "findBestMatches.test.js"
 Cohesion: 0.08
@@ -94,8 +96,12 @@ Nodes (3): canReleaseEscrow(), assert, { canReleaseEscrow }
 Cohesion: 0.83
 Nodes (3): getAllSellers(), getDistance(), matchBestSellers()
 
+### Community 29 - "EcoExchange — דף אימות שוק (מקסימום 350 מילים)"
+Cohesion: 0.25
+Nodes (7): 1) ICP מדויק (לקוח ראשון, ישראל), 2) מחיר מוצע + מודל, 3) זווית מול המתחרה המרכזי, 4) תוכנית 100 המשתמשים הראשונים (תקציב 0), 5) קריטריון המשך/פיבוט/הריגה (30 יום), EcoExchange — Market Validation (auto, DeepSeek 2026-07-20), EcoExchange — דף אימות שוק (מקסימום 350 מילים)
+
 ## Knowledge Gaps
-- **53 isolated node(s):** `assert`, `{ bulkTotal }`, `{ randomUUID }`, `assert`, `{ canReleaseEscrow }` (+48 more)
+- **59 isolated node(s):** `assert`, `{ bulkTotal }`, `{ randomUUID }`, `assert`, `{ canReleaseEscrow }` (+54 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -106,9 +112,7 @@ _Questions this graph is uniquely positioned to answer:_
   _`factory-ci workflow` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `commission()` (e.g. with `factory-ci workflow` and `commission.js`) actually correct?**
   _`commission()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 2 inferred relationships involving `listingScore()` (e.g. with `factory-ci workflow` and `listingScore.js`) actually correct?**
-  _`listingScore()` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `assert`, `{ bulkTotal }`, `{ randomUUID }` to the rest of the system?**
-  _53 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _59 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `findBestMatches.test.js` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
