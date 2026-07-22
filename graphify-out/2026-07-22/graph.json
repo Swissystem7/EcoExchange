@@ -559,61 +559,6 @@
       "norm_label": "computeperformancefee()"
     },
     {
-      "label": "computeRetentionAction.js",
-      "file_type": "code",
-      "source_file": "lib/computeRetentionAction.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_computeretentionaction",
-      "community": 33,
-      "community_name": "computeRetentionAction.js",
-      "norm_label": "computeretentionaction.js"
-    },
-    {
-      "label": "computeRetentionAction()",
-      "file_type": "code",
-      "source_file": "lib/computeRetentionAction.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_computeretentionaction_computeretentionaction",
-      "community": 33,
-      "community_name": "computeRetentionAction.js",
-      "norm_label": "computeretentionaction()"
-    },
-    {
-      "label": "getUserActivityLogs()",
-      "file_type": "code",
-      "source_file": "lib/computeRetentionAction.js",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "lib_computeretentionaction_getuseractivitylogs",
-      "community": 33,
-      "community_name": "computeRetentionAction.js",
-      "norm_label": "getuseractivitylogs()"
-    },
-    {
-      "label": "computeTrustScore.js",
-      "file_type": "code",
-      "source_file": "lib/computeTrustScore.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_computetrustscore",
-      "community": 36,
-      "community_name": "computeTrustScore.js",
-      "norm_label": "computetrustscore.js"
-    },
-    {
-      "label": "computeTrustScore()",
-      "file_type": "code",
-      "source_file": "lib/computeTrustScore.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_computetrustscore_computetrustscore",
-      "community": 36,
-      "community_name": "computeTrustScore.js",
-      "norm_label": "computetrustscore()"
-    },
-    {
       "label": "computeUserTrustScore.js",
       "file_type": "code",
       "source_file": "lib/computeUserTrustScore.js",
@@ -634,72 +579,6 @@
       "community": 20,
       "community_name": "computeUserTrustScore.js",
       "norm_label": "computeusertrustscore()"
-    },
-    {
-      "label": "enrichEquipmentListing.js",
-      "file_type": "code",
-      "source_file": "lib/enrichEquipmentListing.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_enrichequipmentlisting",
-      "community": 34,
-      "community_name": "enrichEquipmentListing.js",
-      "norm_label": "enrichequipmentlisting.js"
-    },
-    {
-      "label": "db",
-      "file_type": "code",
-      "source_file": "lib/enrichEquipmentListing.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_enrichequipmentlisting_db",
-      "community": 34,
-      "community_name": "enrichEquipmentListing.js",
-      "norm_label": "db"
-    },
-    {
-      "label": "enrichEquipmentListing()",
-      "file_type": "code",
-      "source_file": "lib/enrichEquipmentListing.js",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "lib_enrichequipmentlisting_enrichequipmentlisting",
-      "community": 34,
-      "community_name": "enrichEquipmentListing.js",
-      "norm_label": "enrichequipmentlisting()"
-    },
-    {
-      "label": "evaluateSellerTrust.js",
-      "file_type": "code",
-      "source_file": "lib/evaluateSellerTrust.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_evaluatesellertrust",
-      "community": 35,
-      "community_name": "evaluateSellerTrust.js",
-      "norm_label": "evaluatesellertrust.js"
-    },
-    {
-      "label": "evaluateSellerTrust()",
-      "file_type": "code",
-      "source_file": "lib/evaluateSellerTrust.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_evaluatesellertrust_evaluatesellertrust",
-      "community": 35,
-      "community_name": "evaluateSellerTrust.js",
-      "norm_label": "evaluatesellertrust()"
-    },
-    {
-      "label": "getTransactions()",
-      "file_type": "code",
-      "source_file": "lib/evaluateSellerTrust.js",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "lib_evaluatesellertrust_gettransactions",
-      "community": 35,
-      "community_name": "evaluateSellerTrust.js",
-      "norm_label": "gettransactions()"
     },
     {
       "label": "executeEscrowAction.js",
@@ -1043,138 +922,6 @@
       "norm_label": "findpotentialbuyers()"
     },
     {
-      "label": "generatePriceRecommendation.js",
-      "file_type": "code",
-      "source_file": "lib/generatePriceRecommendation.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_generatepricerecommendation",
-      "community": 37,
-      "community_name": "generatePriceRecommendation.js",
-      "norm_label": "generatepricerecommendation.js"
-    },
-    {
-      "label": "generatePriceRecommendation()",
-      "file_type": "code",
-      "source_file": "lib/generatePriceRecommendation.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_generatepricerecommendation_generatepricerecommendation",
-      "community": 37,
-      "community_name": "generatePriceRecommendation.js",
-      "norm_label": "generatepricerecommendation()"
-    },
-    {
-      "label": "generateSmartMatches.js",
-      "file_type": "code",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_generatesmartmatches",
-      "community": 31,
-      "community_name": "generateSmartMatches.js",
-      "norm_label": "generatesmartmatches.js"
-    },
-    {
-      "label": "generateSmartMatches()",
-      "file_type": "code",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_generatesmartmatches_generatesmartmatches",
-      "community": 31,
-      "community_name": "generateSmartMatches.js",
-      "norm_label": "generatesmartmatches()"
-    },
-    {
-      "label": "getHistoricalTransactions()",
-      "file_type": "code",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L52",
-      "_origin": "ast",
-      "id": "lib_generatesmartmatches_gethistoricaltransactions",
-      "community": 31,
-      "community_name": "generateSmartMatches.js",
-      "norm_label": "gethistoricaltransactions()"
-    },
-    {
-      "label": "getListingById()",
-      "file_type": "code",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "lib_generatesmartmatches_getlistingbyid",
-      "community": 31,
-      "community_name": "generateSmartMatches.js",
-      "norm_label": "getlistingbyid()"
-    },
-    {
-      "label": "getAllBuyers()",
-      "file_type": "code",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L60",
-      "_origin": "ast",
-      "id": "lib_generatesmartmatches_getallbuyers",
-      "community": 31,
-      "community_name": "generateSmartMatches.js",
-      "norm_label": "getallbuyers()"
-    },
-    {
-      "label": "getBlockedBuyers()",
-      "file_type": "code",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L64",
-      "_origin": "ast",
-      "id": "lib_generatesmartmatches_getblockedbuyers",
-      "community": 31,
-      "community_name": "generateSmartMatches.js",
-      "norm_label": "getblockedbuyers()"
-    },
-    {
-      "label": "getOptedOutBuyers()",
-      "file_type": "code",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L69",
-      "_origin": "ast",
-      "id": "lib_generatesmartmatches_getoptedoutbuyers",
-      "community": 31,
-      "community_name": "generateSmartMatches.js",
-      "norm_label": "getoptedoutbuyers()"
-    },
-    {
-      "label": "calculateDistance()",
-      "file_type": "code",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L73",
-      "_origin": "ast",
-      "id": "lib_generatesmartmatches_calculatedistance",
-      "community": 31,
-      "community_name": "generateSmartMatches.js",
-      "norm_label": "calculatedistance()"
-    },
-    {
-      "label": "toRad()",
-      "file_type": "code",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L85",
-      "_origin": "ast",
-      "id": "lib_generatesmartmatches_torad",
-      "community": 31,
-      "community_name": "generateSmartMatches.js",
-      "norm_label": "torad()"
-    },
-    {
-      "label": "mockData",
-      "file_type": "code",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L89",
-      "_origin": "ast",
-      "id": "lib_generatesmartmatches_mockdata",
-      "community": 31,
-      "community_name": "generateSmartMatches.js",
-      "norm_label": "mockdata"
-    },
-    {
       "label": "initEscrowContract.js",
       "file_type": "code",
       "source_file": "lib/initEscrowContract.js",
@@ -1428,94 +1175,6 @@
       "norm_label": "iswithinradius()"
     },
     {
-      "label": "matchNewListingToActiveBuyers.js",
-      "file_type": "code",
-      "source_file": "lib/matchNewListingToActiveBuyers.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_matchnewlistingtoactivebuyers",
-      "community": 38,
-      "community_name": "matchNewListingToActiveBuyers.js",
-      "norm_label": "matchnewlistingtoactivebuyers.js"
-    },
-    {
-      "label": "matchNewListingToActiveBuyers()",
-      "file_type": "code",
-      "source_file": "lib/matchNewListingToActiveBuyers.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_matchnewlistingtoactivebuyers_matchnewlistingtoactivebuyers",
-      "community": 38,
-      "community_name": "matchNewListingToActiveBuyers.js",
-      "norm_label": "matchnewlistingtoactivebuyers()"
-    },
-    {
-      "label": "rankMatches.js",
-      "file_type": "code",
-      "source_file": "lib/rankMatches.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_rankmatches",
-      "community": 39,
-      "community_name": "rankMatches.js",
-      "norm_label": "rankmatches.js"
-    },
-    {
-      "label": "rankMatches()",
-      "file_type": "code",
-      "source_file": "lib/rankMatches.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_rankmatches_rankmatches",
-      "community": 39,
-      "community_name": "rankMatches.js",
-      "norm_label": "rankmatches()"
-    },
-    {
-      "label": "seedCatalog.js",
-      "file_type": "code",
-      "source_file": "lib/seedCatalog.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_seedcatalog",
-      "community": 32,
-      "community_name": "seedCatalog.js",
-      "norm_label": "seedcatalog.js"
-    },
-    {
-      "label": "LISTINGS",
-      "file_type": "code",
-      "source_file": "lib/seedCatalog.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_seedcatalog_listings",
-      "community": 32,
-      "community_name": "seedCatalog.js",
-      "norm_label": "listings"
-    },
-    {
-      "label": "seedCatalog()",
-      "file_type": "code",
-      "source_file": "lib/seedCatalog.js",
-      "source_location": "L46",
-      "_origin": "ast",
-      "id": "lib_seedcatalog_seedcatalog",
-      "community": 32,
-      "community_name": "seedCatalog.js",
-      "norm_label": "seedcatalog()"
-    },
-    {
-      "label": "marketDepth()",
-      "file_type": "code",
-      "source_file": "lib/seedCatalog.js",
-      "source_location": "L48",
-      "_origin": "ast",
-      "id": "lib_seedcatalog_marketdepth",
-      "community": 32,
-      "community_name": "seedCatalog.js",
-      "norm_label": "marketdepth()"
-    },
-    {
       "label": "slugify.js",
       "file_type": "code",
       "source_file": "lib/slugify.js",
@@ -1560,28 +1219,6 @@
       "norm_label": "{slugify}"
     },
     {
-      "label": "suggestListingPrice.js",
-      "file_type": "code",
-      "source_file": "lib/suggestListingPrice.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_suggestlistingprice",
-      "community": 40,
-      "community_name": "suggestListingPrice.js",
-      "norm_label": "suggestlistingprice.js"
-    },
-    {
-      "label": "suggestListingPrice()",
-      "file_type": "code",
-      "source_file": "lib/suggestListingPrice.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_suggestlistingprice_suggestlistingprice",
-      "community": 40,
-      "community_name": "suggestListingPrice.js",
-      "norm_label": "suggestlistingprice()"
-    },
-    {
       "label": "suggestPrice.js",
       "file_type": "code",
       "source_file": "lib/suggestPrice.js",
@@ -1624,50 +1261,6 @@
       "community": 24,
       "community_name": "validateBulkListings.js",
       "norm_label": "validatebulklistings()"
-    },
-    {
-      "label": "validateEscrowRelease.js",
-      "file_type": "code",
-      "source_file": "lib/validateEscrowRelease.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_validateescrowrelease",
-      "community": 41,
-      "community_name": "validateEscrowRelease.js",
-      "norm_label": "validateescrowrelease.js"
-    },
-    {
-      "label": "validateEscrowRelease()",
-      "file_type": "code",
-      "source_file": "lib/validateEscrowRelease.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_validateescrowrelease_validateescrowrelease",
-      "community": 41,
-      "community_name": "validateEscrowRelease.js",
-      "norm_label": "validateescrowrelease()"
-    },
-    {
-      "label": "validateListingSpecs.js",
-      "file_type": "code",
-      "source_file": "lib/validateListingSpecs.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_validatelistingspecs",
-      "community": 42,
-      "community_name": "validateListingSpecs.js",
-      "norm_label": "validatelistingspecs.js"
-    },
-    {
-      "label": "validateListingSpecs()",
-      "file_type": "code",
-      "source_file": "lib/validateListingSpecs.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "lib_validatelistingspecs_validatelistingspecs",
-      "community": 42,
-      "community_name": "validateListingSpecs.js",
-      "norm_label": "validatelistingspecs()"
     },
     {
       "label": "validateQuickListing.js",
@@ -2528,53 +2121,6 @@
     {
       "relation": "indirect_call",
       "confidence": "INFERRED",
-      "source_file": "lib/computeRetentionAction.js",
-      "source_location": "L50",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_computeretentionaction",
-      "target": "lib_computeretentionaction_computeretentionaction",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/computeRetentionAction.js",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_computeretentionaction",
-      "target": "lib_computeretentionaction_getuseractivitylogs",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/computeRetentionAction.js",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_computeretentionaction_computeretentionaction",
-      "target": "lib_computeretentionaction_getuseractivitylogs",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "lib/computeTrustScore.js",
-      "source_location": "L52",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_computetrustscore",
-      "target": "lib_computetrustscore_computetrustscore",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
       "source_file": "lib/computeUserTrustScore.js",
       "source_location": "L44",
       "weight": 1.0,
@@ -2583,64 +2129,6 @@
       "source": "lib_computeusertrustscore",
       "target": "lib_computeusertrustscore_computeusertrustscore",
       "confidence_score": 0.5
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/enrichEquipmentListing.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_enrichequipmentlisting",
-      "target": "lib_enrichequipmentlisting_db",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "lib/enrichEquipmentListing.js",
-      "source_location": "L69",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_enrichequipmentlisting",
-      "target": "lib_enrichequipmentlisting_enrichequipmentlisting",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "lib/evaluateSellerTrust.js",
-      "source_location": "L33",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_evaluatesellertrust",
-      "target": "lib_evaluatesellertrust_evaluatesellertrust",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/evaluateSellerTrust.js",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_evaluatesellertrust",
-      "target": "lib_evaluatesellertrust_gettransactions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/evaluateSellerTrust.js",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_evaluatesellertrust_evaluatesellertrust",
-      "target": "lib_evaluatesellertrust_gettransactions",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2969,202 +2457,6 @@
     {
       "relation": "indirect_call",
       "confidence": "INFERRED",
-      "source_file": "lib/generatePriceRecommendation.js",
-      "source_location": "L43",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_generatepricerecommendation",
-      "target": "lib_generatepricerecommendation_generatepricerecommendation",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L73",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches",
-      "target": "lib_generatesmartmatches_calculatedistance",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L96",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_generatesmartmatches",
-      "target": "lib_generatesmartmatches_generatesmartmatches",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L60",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches",
-      "target": "lib_generatesmartmatches_getallbuyers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L64",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches",
-      "target": "lib_generatesmartmatches_getblockedbuyers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L52",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches",
-      "target": "lib_generatesmartmatches_gethistoricaltransactions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L56",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches",
-      "target": "lib_generatesmartmatches_getlistingbyid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L69",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches",
-      "target": "lib_generatesmartmatches_getoptedoutbuyers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L89",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches",
-      "target": "lib_generatesmartmatches_mockdata",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L85",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches",
-      "target": "lib_generatesmartmatches_torad",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L35",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches_generatesmartmatches",
-      "target": "lib_generatesmartmatches_calculatedistance",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L12",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches_generatesmartmatches",
-      "target": "lib_generatesmartmatches_getallbuyers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches_generatesmartmatches",
-      "target": "lib_generatesmartmatches_getblockedbuyers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches_generatesmartmatches",
-      "target": "lib_generatesmartmatches_gethistoricaltransactions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches_generatesmartmatches",
-      "target": "lib_generatesmartmatches_getlistingbyid",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches_generatesmartmatches",
-      "target": "lib_generatesmartmatches_getoptedoutbuyers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/generateSmartMatches.js",
-      "source_location": "L76",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_generatesmartmatches_calculatedistance",
-      "target": "lib_generatesmartmatches_torad",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
       "source_file": "lib/initEscrowContract.js",
       "source_location": "L21",
       "weight": 1.0,
@@ -3461,65 +2753,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "lib/matchNewListingToActiveBuyers.js",
-      "source_location": "L91",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_matchnewlistingtoactivebuyers",
-      "target": "lib_matchnewlistingtoactivebuyers_matchnewlistingtoactivebuyers",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "lib/rankMatches.js",
-      "source_location": "L51",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_rankmatches",
-      "target": "lib_rankmatches_rankmatches",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/seedCatalog.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_seedcatalog",
-      "target": "lib_seedcatalog_listings",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "lib/seedCatalog.js",
-      "source_location": "L60",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_seedcatalog",
-      "target": "lib_seedcatalog_marketdepth",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "lib/seedCatalog.js",
-      "source_location": "L60",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_seedcatalog",
-      "target": "lib_seedcatalog_seedcatalog",
-      "confidence_score": 0.5
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -3556,18 +2789,6 @@
     {
       "relation": "indirect_call",
       "confidence": "INFERRED",
-      "source_file": "lib/suggestListingPrice.js",
-      "source_location": "L71",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_suggestlistingprice",
-      "target": "lib_suggestlistingprice_suggestlistingprice",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
       "source_file": "lib/suggestPrice.js",
       "source_location": "L77",
       "weight": 1.0,
@@ -3587,30 +2808,6 @@
       "context": "collection",
       "source": "lib_validatebulklistings",
       "target": "lib_validatebulklistings_validatebulklistings",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "lib/validateEscrowRelease.js",
-      "source_location": "L33",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_validateescrowrelease",
-      "target": "lib_validateescrowrelease_validateescrowrelease",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "lib/validateListingSpecs.js",
-      "source_location": "L32",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "lib_validatelistingspecs",
-      "target": "lib_validatelistingspecs_validatelistingspecs",
       "confidence_score": 0.5
     },
     {
@@ -3845,5 +3042,5 @@
       "source_file": "index.html"
     }
   ],
-  "built_at_commit": "59256c28e98537923f5dd329d1b3c43a7e82d891"
+  "built_at_commit": "1edaf493a6ab30b55a6c49d1dec8b33a7c024a6b"
 }

@@ -190,9 +190,9 @@
     "semantic_hash": "f611640356a74bebfbe4c2ac6190770a"
   },
   "index.html": {
-    "mtime": 1784678681.1103861,
-    "ast_hash": "7bd09456910c7008113ec90defd437a4",
-    "semantic_hash": ""
+    "mtime": 1784569748.2857494,
+    "ast_hash": "ceb88f35c5b3cd3bc3279a0b8fcf2cff",
+    "semantic_hash": "ceb88f35c5b3cd3bc3279a0b8fcf2cff"
   },
   "lib/README.md": {
     "mtime": 1784217856.4950604,
@@ -207,66 +207,6 @@
   "VALIDATION.md": {
     "mtime": 1784581451.2186348,
     "ast_hash": "884194f02514a871603e3c7e84c43ae3",
-    "semantic_hash": ""
-  },
-  "lib/computeRetentionAction.js": {
-    "mtime": 1784616375.5866742,
-    "ast_hash": "82db0f33f6e7a10b3eedd3efd43ef77b",
-    "semantic_hash": ""
-  },
-  "lib/computeTrustScore.js": {
-    "mtime": 1784601967.774314,
-    "ast_hash": "d453cb66f3c05e6e6e16283062202332",
-    "semantic_hash": ""
-  },
-  "lib/enrichEquipmentListing.js": {
-    "mtime": 1784630769.49254,
-    "ast_hash": "ae44c1b02c86eaf399f776d44a05e78c",
-    "semantic_hash": ""
-  },
-  "lib/evaluateSellerTrust.js": {
-    "mtime": 1784616375.0301194,
-    "ast_hash": "ed1f752ba43095217610f773272eb3e7",
-    "semantic_hash": ""
-  },
-  "lib/generatePriceRecommendation.js": {
-    "mtime": 1784645175.2560685,
-    "ast_hash": "ac54684c3f7f13e867290be69a0d15f7",
-    "semantic_hash": ""
-  },
-  "lib/generateSmartMatches.js": {
-    "mtime": 1784616374.2630324,
-    "ast_hash": "d4b32f65434611475b20287c03a1b47d",
-    "semantic_hash": ""
-  },
-  "lib/matchNewListingToActiveBuyers.js": {
-    "mtime": 1784659579.646887,
-    "ast_hash": "741f24e8dc4df9c864dd62a2f5d82379",
-    "semantic_hash": ""
-  },
-  "lib/rankMatches.js": {
-    "mtime": 1784645175.9752734,
-    "ast_hash": "303e9760f27a1874b40972d3d794de72",
-    "semantic_hash": ""
-  },
-  "lib/seedCatalog.js": {
-    "mtime": 1784678567.7877438,
-    "ast_hash": "24da3111a8b0e333352365b15fc77669",
-    "semantic_hash": ""
-  },
-  "lib/suggestListingPrice.js": {
-    "mtime": 1784659578.8509774,
-    "ast_hash": "de8570a4c4bae05bf01f1617d92ee1ae",
-    "semantic_hash": ""
-  },
-  "lib/validateEscrowRelease.js": {
-    "mtime": 1784601968.3836884,
-    "ast_hash": "f9ab967f517e7e4c49c188fa839aa4c9",
-    "semantic_hash": ""
-  },
-  "lib/validateListingSpecs.js": {
-    "mtime": 1784601968.9231906,
-    "ast_hash": "e3e52713681e387c6bb0f71e8a841b66",
     "semantic_hash": ""
   }
 }

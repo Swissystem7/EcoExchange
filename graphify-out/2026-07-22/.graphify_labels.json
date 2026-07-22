@@ -29,17 +29,5 @@
   "27": "verifyListingData.js",
   "28": "EcoExchange README",
   "29": "EcoExchange — דף אימות שוק (מקסימום 350 מילים)",
-  "30": "initEscrowContract.js",
-  "31": "generateSmartMatches.js",
-  "32": "seedCatalog.js",
-  "33": "computeRetentionAction.js",
-  "34": "enrichEquipmentListing.js",
-  "35": "evaluateSellerTrust.js",
-  "36": "computeTrustScore.js",
-  "37": "generatePriceRecommendation.js",
-  "38": "matchNewListingToActiveBuyers.js",
-  "39": "rankMatches.js",
-  "40": "suggestListingPrice.js",
-  "41": "validateEscrowRelease.js",
-  "42": "validateListingSpecs.js"
+  "30": "initEscrowContract.js"
 }
